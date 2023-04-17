@@ -6,7 +6,7 @@ export default function List() {
       <h2 className="title">Products</h2>
       {products.map((item, i) => {
         return (
-          <div className="food">
+          <div className="food" key={i}>
             <h4>{products[i]} $40</h4>
           </div>
         );
