@@ -3,7 +3,7 @@ export default function List() {
   let products = ["Tomatoes", "Pasta", "Coconut"];
   return (
     <div>
-      <h2>Products</h2>
+      <h2 className="title">Products</h2>
       <div className="food">
         <h4>{products[0]} $40</h4>
       </div>
