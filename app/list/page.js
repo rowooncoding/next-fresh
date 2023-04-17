@@ -4,10 +4,10 @@ export default function List() {
   return (
     <div>
       <h2 className="title">Products</h2>
-      {products.map(() => {
+      {products.map((item, i) => {
         return (
           <div className="food">
-            <h4>{products[0]} $40</h4>
+            <h4>{products[i]} $40</h4>
           </div>
         );
       })}
