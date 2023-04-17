@@ -7,10 +7,6 @@ const inter = Inter({ subsets: ["latin"] });
 export default function Home() {
   return (
     <div>
-      <div className="navbar">
-        <Link href="/">홈</Link>
-        <Link href="/list">List</Link>
-      </div>
       <h4 className="title">애플 후레시</h4>
       <p className="title-sub">by dev rowoon</p>
     </div>
