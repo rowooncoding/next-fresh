@@ -10,7 +10,9 @@ export default function List() {
         return (
           <div className="food" key={i}>
             <img src={`/food${i}.png`} className="food-img" />
-            <h4>{products[i]} $40</h4>
+            <h4>{item} $40</h4>
+            <span> 1 </span>
+            <button>+</button>
           </div>
         );
       })}
