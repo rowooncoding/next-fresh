@@ -1,4 +1,4 @@
-import Image from "next/image";
+"use client";
 
 export default function List() {
   //db데이터를 가져왔다고 생각함
