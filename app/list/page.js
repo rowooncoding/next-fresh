@@ -5,14 +5,18 @@ import { useState } from "react";
 export default function List() {
   //db데이터를 가져왔다고 생각함
   let products = ["Tomatoes", "Pasta", "Coconut"];
-  const [count, setCount] = useState(0);
+  const [count, setCount] = useState([0, 0, 0]);
 
   const onIncrease = () => {
-    setCount(count + 1);
+    let copy = [...count];
+    copy[0]++;
+    setCount(copy);
   };
 
   const onDecrease = () => {
-    setCount(count - 1);
+    let copy = [...count];
+    copy[0]--;
+    setCount(copy);
   };
   return (
     <div>
@@ -23,7 +27,7 @@ export default function List() {
             <img src={`/food${i}.png`} className="food-img" />
             <h4>{item} $40</h4>
             <button onClick={onDecrease}>-</button>
-            <span> {count} </span>
+            <span> {count[i]} </span>
             <button onClick={onIncrease}>+</button>
           </div>
         );
