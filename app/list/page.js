@@ -14,6 +14,13 @@ export default function List() {
           <div className="food" key={i}>
             <img src={`/food${i}.png`} className="food-img" />
             <h4>{item} $40</h4>
+            <button
+              onClick={() => {
+                setCount(count - 1);
+              }}
+            >
+              -
+            </button>
             <span> {count} </span>
             <button
               onClick={() => {
