@@ -6,8 +6,14 @@ export default function Cart() {
       <h4 className="title">Cart</h4>
       <CartItem cart={cart[0]} />
       <CartItem cart={cart[1]} />
+      <Banner content="롯데카드" />
+      <Banner content="현대카드" />
     </div>
   );
+}
+
+function Banner(props) {
+  return <h5>{props.content} 결제 행사중</h5>;
 }
 
 function CartItem(props) {
