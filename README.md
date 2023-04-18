@@ -3,8 +3,6 @@
 ## TIL
 <ul>
 <li><a href="https://github.com/rowooncoding/next-fresh/wiki/23.04.17">23.04.17</a></li>
-<li><a href="">23.04.18</a></li>
-<li><a href="">23.04.19</a></li>
 
 ## 학습목록
 - [x]  개발환경 셋팅
