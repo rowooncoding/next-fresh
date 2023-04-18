@@ -1,4 +1,6 @@
 export default function Cart() {
+  // 데이터베이스에서 가져온거라고 생각
+  let cart = ["Tomatoes", "Pasta"];
   return (
     <div>
       <h4 className="title">Cart</h4>
